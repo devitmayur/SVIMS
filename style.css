@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #2a4a68;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 15px;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+
+h1{
+    font-size: 3.5rem;
+}
+
+
+h2{
+    font-size: 2rem;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+p {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.5rem;
+    /* color: var(--secondary-text-color); */
+    line-height: 1.8rem;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--primary-text-color);
+}
+
+
+.link-hover {
+    border: 2px solid var(--primary-text-color);
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: 0.2s ease-out;
+}
+
+
+.link-hover:hover {
+    border: 2px solid var(--secondary-text-color);
+    transform: translateY(-3px);
+    box-shadow: 0 1px 4px var(--secondary-text-color) ;
+}
+
+
+.container {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 5rem;
+    /* border: 2px solid red; */
+}
+
+
+
+/* navbar */
+
+
+
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+.svim-logo img {
+    height: 80px;
+    width: 80px;
+}
+
+
+.svim-logo {
+    justify-content: flex-start;
+}
+
+
+.nav-links {
+    justify-content: end;
+}
+
+
+ .ul-items {
+    display: flex;
+    gap: 55px;
+    font-size: 1.3rem;
+}
+
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+
+.nav-menu {
+    position: relative;
+    user-select: none;
+}
+
+.nav-menu ul {
+    position:absolute;
+    right: 70%;
+    top: 50px;
+    border: 1px solid rgb(41, 40, 40) ;
+    box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.5);;
+    width: max-content;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+.nav-menu ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover{
+        background-color: #f0f2fb;
+    }
+}
+
+
+.nav-menu summary {
+    list-style: none;
+    padding-top: 8px;
+}
+
+/* header */
+
+
+.header-btns{
+    margin-top: 20px;
+}
+
+
+.link-hover-centerbtn {
+    
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.2s ease-out;
+    margin-inline: 10px;
+    background-color: #012b4b;
+    color: beige;
+    
+    &:hover {
+        /* border: 2px solid var(--secondary-text-color); */
+        transform: translateY(-3px);
+        box-shadow: 0 3px 4px var(--secondary-text-color) ;
+    }
+    
+}
+
+.header-link-hover{
+    border: 2px solid var(--primary-text-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.2s ease-out;
+    
+    &:hover{
+        border: 2px solid var(--secondary-text-color);
+        transform: translateY(-3px);
+        box-shadow: 0 1px 4px var(--secondary-text-color) ;
+    }
+}
+
+
+.header-section {
+    display: flex;
+    gap: 30px;
+}
+
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+
+.header-left h1{
+    color: #012b4b !important;
+    font-family: 'roboto' , sans-serif;
+    text-wrap: balance;
+}
+
+
+.header-left p {
+    color: #fa4300e8;
+    text-wrap: balance;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+
+.header-right img {
+    margin-top: 40px;
+    border-radius: 50px;
+    width:550px;
+    box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.social-links {
+    display: flex;
+    gap: 20px;
+} 
+
+
+.social-link-hover{
+    font-size: 2.3rem;
+    transition: 0.3s;
+    &:hover {
+        transform: translateY(-3px);
+    }
+} 
+
+
+.insta-icon {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.fb-icon {
+    background: linear-gradient(45deg, #4267b2 0%, #384e8a 25%, #2f4c7e 50%, #273c6a 75%, #1f315f 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.linkedin-icom {
+    background: linear-gradient(45deg, #0077b5 0%, #00669c 25%, #005682 50%, #00456b 75%, #00355c 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.yt-icon {
+    background: linear-gradient(45deg, #ff0000 0%, #c40303 25%, #a30000 50%, #7f0000 75%, #5c0000 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.header-right p{
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 18px;
+}
+
+
+.header-btns {
+    display :flex;
+    justify-self: start;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+/* feed-area */
+
+
+.feed-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 80px 80px;
+}    
+
+
+.feed-block-header {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.feed-block-header-text {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: #181818;
+    padding: 10px;
+}
+
+
+.feed-block-header {
+    text-align: center;
+}
+
+
+.feed-block-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+
+.feed-block-card p {
+    color: rgb(49, 49, 49) !important;
+}
+
+
+.feed-block-card {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.feed-block-card a {
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+
+.feed-block-card i {
+    font-size: 6rem;
+}
+
+
+.fa-briefcase {
+    background: linear-gradient(45deg, #2196f3 0%, #1976d2 25%, #1565c0 50%, #0f55b5 75%, #0a3f9f 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.fa-images {
+    background: linear-gradient(45deg, #f7dc6f 0%, #f4d03f 25%, #f1c40f 50%, #e67e73 75%, #d35400 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.fa-film {
+    background: linear-gradient(45deg, #8e24aa 0%, #7b1fa2 25%, #6a1b9a 50%, #5c007a 75%, #4a006e 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.fa-envelope {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .fa-pen-to-square {
+    background: linear-gradient(to bottom, #fc6868, #f39d12);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .fa-user-tie {
+    background: linear-gradient(to bottom, #e74c3c, #c0392b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
+
+.carousel-section {
+    position: relative;
+    margin-block: 80px 80px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.1);
+}
+
+.carousel-item-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+.carousel-item:hover .carousel-item-content {
+    opacity: 1;
+}
+
+.carousel-item-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.carousel-item-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.carousel-item-content span {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+.carousel-control.prev {
+    left: 10px;
+    border-radius: 50%;
+}
+
+.carousel-control.next {
+    right: 10px;
+    border-radius: 50%;
+}
+
+
+/* latest-events-section */
+
+
+/* .latest-events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    
+}
+
+
+.latest-events-content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
