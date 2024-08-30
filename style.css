@@ -510,7 +510,7 @@ a {
 /* latest-events-section */
 
 
-/* .latest-events {
+.latest-events {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -524,4 +524,4 @@ a {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-} */
+}
