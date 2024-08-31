@@ -552,7 +552,6 @@ a {
 .card {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     background-color: #fff;
     padding: 15px;
     border: 1px solid #ddd;
@@ -577,8 +576,9 @@ a {
 
 
 .card-body {
-    padding: 15px;
+    padding-top: 50px;
     transition: transform 0.3s ease-out;
+    
 
     &:hover {
         transform: translateY(-3px);
@@ -588,7 +588,7 @@ a {
 
 .card-body h2 {
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     display: inline-block;
     margin-bottom: 10px;
     color: rgb(85, 85, 85);
@@ -602,7 +602,13 @@ a {
 
   
 .card-body p {
-    margin-bottom: 15px;
+    padding-bottom: 0;
+}
+
+
+.see-more {
+    margin-left: 20px;
+    font-size: 1.2rem;
 }
 
  
@@ -614,7 +620,6 @@ a {
     border-radius: 10px;
     color: white;
     text-wrap: balance;
-    height: 100%;
 }
 
 
@@ -627,6 +632,13 @@ a {
 
 .salient-features li {
     margin-bottom: 10px;
-    line-height: 3rem;
+    line-height: 5rem;
+}
+
+
+.footer-1 {
+    background-color: #00456b;
+    height: 400px;
+    width: 100%;
 }
   
