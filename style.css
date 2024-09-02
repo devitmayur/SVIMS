@@ -15,6 +15,19 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+section {
+  scroll-snap-type: mandatory;
+  scroll-snap-align: start;
+  transition: scroll 0.5s;
+  scroll-padding-top: 10px;
+}
+  
+
+
 body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
@@ -43,7 +56,6 @@ h3 {
 p {
     font-family: 'poppins', sans-serif;
     font-size: 1.5rem;
-    /* color: var(--secondary-text-color); */
     line-height: 1.8rem;
 }
 
@@ -564,6 +576,9 @@ a {
     &:hover {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         transform: translateY(-3px);
+        
+        background: linear-gradient(300deg, rgba(238, 174, 202, 0.123) 50%, rgba(151, 196, 247, 0.308) 100%);
+
     }
 }
 
@@ -616,7 +631,7 @@ a {
     flex-basis: 40%;
     margin-top: 95px;
     padding: 20px;
-    background-color: #00355c;
+    background: linear-gradient(164deg, rgba(0,69,107,1) 0%, rgb(28, 107, 153) 51%, rgb(5, 62, 109) 100%);
     border-radius: 10px;
     color: white;
     text-wrap: balance;
@@ -637,8 +652,47 @@ a {
 
 
 .footer-1 {
+    display: flex;
     background-color: #00456b;
     height: 400px;
     width: 100%;
 }
   
+
+.get-in-touch {
+    height: 40px;
+    width: 35%;
+    gap: 10px;
+    color: #fff;
+    padding-block: 30px;
+    letter-spacing: 0.12rem;
+}
+
+
+.get-in-touch h2 {
+    margin-left: 20px;
+}
+
+
+.get-in-touch a {
+    color: #fff;
+}
+
+
+/* .fa-location-dot , .fa-paper-plane , .fa-phone-volume  {
+    margin-left: 20px;
+    line-height: 25px;
+    font-size: ;
+} */
+
+
+.get-in-touch i {
+    display: flex;
+    margin-left: 20px;
+    line-height: 25px;
+    font-size: 0.8rem;
+    gap: 10px;
+    padding-block: 5px;
+}
+
+
